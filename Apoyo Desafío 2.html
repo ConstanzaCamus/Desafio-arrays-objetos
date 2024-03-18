@@ -69,12 +69,21 @@
     document.write('</ol>')
 
     // Ejercicio 5
+
     for (consulta of dental) {
         if (consulta.prevision === 'ISAPRE') {
             document.write(`<p>${consulta.paciente} - ${consulta.prevision}</p>`);
         }
     }
 
+    // Ejercicio 6
+    document.write('<ul>');
+    for (consulta of traumatologia) {
+        if (consulta.prevision === 'FONASA') {
+            document.write(`<li>${consulta.paciente} - ${consulta.prevision}</li>`);
+        }
+    }
+    document.write('</ul>')
     //Agregar código para el desafio 2 aquí
 
     document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
