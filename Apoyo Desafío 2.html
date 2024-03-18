@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <title>Centro Médico Ñuñoa</title>
 </head>
 <script>
@@ -51,7 +50,10 @@
     radiologia.pop();
     radiologia.shift();
 
-
+    // Ejercicio 3
+    for (let consulta of dental) {
+        document.write(`<p>${consulta.hora} - ${consulta.especialista} - ${consulta.paciente} - ${consulta.rut} - ${consulta.prevision}</p>`);
+    };
 
     //Agregar código para el desafio 2 aquí
 
