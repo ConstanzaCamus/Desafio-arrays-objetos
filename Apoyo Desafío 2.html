@@ -68,6 +68,12 @@
     }
     document.write('</ol>')
 
+    // Ejercicio 5
+    for (consulta of dental) {
+        if (consulta.prevision === 'ISAPRE') {
+            document.write(`<p>${consulta.paciente} - ${consulta.prevision}</p>`);
+        }
+    }
 
     //Agregar código para el desafio 2 aquí
 
